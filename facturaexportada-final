@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FACTURA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="FacturaXSD.xsd">
+    <detalle_factura>
+        <id>1</id>
+        <codido>SRI3635</codido>
+        <ruc>1777777777</ruc>
+        <cedula>1778968574</cedula>
+        <nombre>Wendy</nombre>
+        <apellido>Soto</apellido>
+        <fecha>
+            <dia>20</dia>
+            <mes>enero</mes>
+            <anio>2020</anio>
+        </fecha>
+        <telefono>0997580321</telefono>
+        <direccion>Quitumbe</direccion>
+        <cantidad>1</cantidad>
+        <detalle>Peluche Panda</detalle>
+        <formapago>efectivo</formapago>
+        <total>20</total>
+    </detalle_factura>
+</FACTURA>
