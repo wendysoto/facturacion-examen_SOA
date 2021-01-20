@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+	<FACTURA>
+		<detalle_factura>
+			<id>1</id>
+			<codido>SRI3635</codido>
+			<ruc>1777777777</ruc>
+			<cedula>1778968574</cedula>
+			<nombre>Wendy</nombre>
+			<apellido>Soto</apellido>
+			<fecha>2021-01-20</fecha>
+			<telefono>0997580321</telefono>
+			<direccion>Quitumbe</direccion>
+			<cantidad>1</cantidad>
+			<detalle>Peluche Panda</detalle>
+			<formapago>efectivo</formapago>
+			<total>20</total>
+		</detalle_factura>
+	</FACTURA>
