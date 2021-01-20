@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="FACTURA">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="detalle_factura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:int"></xs:element>
+                            <xs:element name="codido" type="xs:string" fixed="SRI3635"></xs:element>
+                            <xs:element name="ruc" type="xs:int"></xs:element>
+                            <xs:element name="cedula" type="xs:string"></xs:element>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="20" />
+                                    </xs:restriction>
+           
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="apellido" type="xs:string"></xs:element>
+                            <xs:element name="fecha">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="31"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="mes">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="enero"/>
+                                                    <xs:enumeration value="febrero"/>
+                                                    <xs:enumeration value="marzo"/>
+                                                    <xs:enumeration value="abril"/>
+                                                    <xs:enumeration value="mayo"/>
+                                                    <xs:enumeration value="junio"/>
+                                                    <xs:enumeration value="julio"/>
+                                                    <xs:enumeration value="agosto"/>
+                                                    <xs:enumeration value="septiembre"/>
+                                                    <xs:enumeration value="octubre"/>
+                                                    <xs:enumeration value="noviembre"/>
+                                                    <xs:enumeration value="diciembre"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="anio">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="2012"/>
+                                                    <xs:maxInclusive value="2020"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="telefono">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="direccion" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+            
+                                        <xs:maxLength value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="cantidad" type="xs:int"></xs:element>
+                            <xs:element name="detalle">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+            
+                                        <xs:maxLength value="50"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="formapago">
+                                <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="efectivo"/>
+                                                    <xs:enumeration value="dinero electronico"/>
+                                                    <xs:enumeration value="tarjeta de credito"/>
+                                                    <xs:enumeration value="tarjeta de debito"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="total" type="xs:int"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
