@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="estilosFactura.css"?>
+
+	<FACTURA xmlns="http://www.w3.org/1999/xhtml">
+            <p class="titulo">
+            <h1 class="titulo">FACTURA COMPRA DE PELUCHE PANDA EN “DPELUCHES”</h1>
+            <h3>Detalle de Factura</h3>
+            </p>
+    <img src="https://cdn.pixabay.com/photo/2016/11/04/23/23/luggage-1799224_960_720.jpg" alt="cafe" width="300" height="200"/>
+            
+    
+		<detalle_factura class="detalle">
+			<id>1</id>
+			<codido>SRI3635</codido>
+			<ruc>1777777777</ruc>
+			<cedula>1778968574</cedula>
+			<nombre>Wendy</nombre>
+			<apellido>Soto</apellido>
+			<fecha>2021-01-20</fecha>
+			<telefono>0997580321</telefono>
+			<direccion>Quitumbe</direccion>
+			<cantidad>1</cantidad>
+			<detalle>Peluche Panda</detalle>
+			<formapago>efectivo</formapago>
+			<total>20</total>
+		</detalle_factura>
+                
+                <h4>Pagina web factura</h4>
+	</FACTURA>

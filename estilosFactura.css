@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    
+    Author     : WENDY
+*/
+
+detalle_factura
+{
+    display:block;
+    background-color: whitesmoke;
+      border:coral 1px solid;
+      padding:10px;
+     padding:10px;
+     display:table-cell;
+    
+}
+id,codido,ruc,cedula, nombre, apellido, fecha, telefono, direccion, cantidad, detalle, formapago, total{
+    display:list-item;
+    margin-left: 50px;
+    color:coral;
+    font-size: 20px;
+    
+    
+}
+
+#titulo{
+    color:yellow;
+    font-size: 30px;
+     background-color: whitesmoke;
+      border:coral 1px solid;
+      padding:10px;
+}
+#detalle{
+    padding:10px;
+}
