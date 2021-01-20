@@ -6,8 +6,8 @@
         <codido>SRI3635</codido>
         <ruc>1777777777</ruc>
         <cedula>1778968574</cedula>
-        <nombre>Wendy</nombre>
-        <apellido>Soto</apellido>
+        <nombre>David</nombre>
+        <apellido>Curipoma</apellido>
         <fecha>
             <dia>20</dia>
             <mes>enero</mes>
@@ -16,7 +16,7 @@
         <telefono>0997580321</telefono>
         <direccion>Quitumbe</direccion>
         <cantidad>1</cantidad>
-        <detalle>Peluche Panda</detalle>
+        <detalle>Peluche Pato</detalle>
         <formapago>efectivo</formapago>
         <total>20</total>
     </detalle_factura>
